@@ -316,4 +316,150 @@ document.addEventListener('DOMContentLoaded', function () {
     // closeBtn.addEventListener("click", closePopup);
     // bg.addEventListener("click", closePopup);
 
+
+    /* GALLERY */
+
+    // GALLERY
+
+    const thumbs = document.querySelectorAll('.product-gallery__thumb');
+    const mainImage = document.getElementById('mainImage');
+
+    thumbs.forEach(thumb => {
+
+        thumb.addEventListener('click', () => {
+
+            thumbs.forEach(item => item.classList.remove('active'));
+
+            thumb.classList.add('active');
+
+            const imgSrc = thumb.querySelector('img').src;
+
+            mainImage.src = imgSrc;
+
+        });
+
+    });
+
+    // TABS
+
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            tabBtns.forEach(item => item.classList.remove('active'));
+            tabContents.forEach(item => item.classList.remove('active'));
+
+            btn.classList.add('active');
+
+            document
+                .getElementById(btn.dataset.tab)
+                .classList.add('active');
+
+        });
+
+    });
+
+    // SHOW MORE
+
+    const moreBtn = document.querySelector('.more-btn');
+    const description = document.querySelector('.product-description');
+
+    moreBtn.addEventListener('click', () => {
+
+        description.classList.toggle('active');
+
+        if (description.classList.contains('active')) {
+            moreBtn.textContent = 'Сховати';
+        } else {
+            moreBtn.textContent = 'Детальніше';
+        }
+
+    });
+
+    // QUANTITY
+
+    const minus = document.querySelector('.quantity-minus');
+    const plus = document.querySelector('.quantity-plus');
+    const quantityInput = document.getElementById('quantityInput');
+
+    const cartQuantity = document.getElementById('cartQuantity');
+    const cartTotal = document.getElementById('cartTotal');
+    const cartCount = document.getElementById('cartCount');
+
+    let price = 520;
+
+    function updateCart() {
+
+        let quantity = parseInt(quantityInput.value);
+
+        if (quantity < 1) quantity = 1;
+
+        quantityInput.value = quantity;
+
+        cartQuantity.value = quantity;
+
+        cartCount.textContent = quantity;
+
+        cartTotal.textContent = `${price * quantity} грн`;
+
+    }
+
+    plus.addEventListener('click', () => {
+        quantityInput.value++;
+        updateCart();
+    });
+
+    minus.addEventListener('click', () => {
+
+        if (quantityInput.value > 1) {
+            quantityInput.value--;
+        }
+
+        updateCart();
+
+    });
+
+    // MODALS
+
+    const cartModal = document.getElementById('cartModal');
+    const quickModal = document.getElementById('quickModal');
+
+    document.querySelector('.buy-btn').addEventListener('click', () => {
+
+        cartModal.classList.add('active');
+
+        updateCart();
+
+    });
+
+    document.querySelector('.quick-btn').addEventListener('click', () => {
+
+        quickModal.classList.add('active');
+
+    });
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+
+        btn.addEventListener('click', () => {
+
+            cartModal.classList.remove('active');
+            quickModal.classList.remove('active');
+
+        });
+
+    });
+
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+
+        overlay.addEventListener('click', () => {
+
+            cartModal.classList.remove('active');
+            quickModal.classList.remove('active');
+
+        });
+
+    });
 });
