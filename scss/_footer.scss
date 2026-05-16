@@ -7,6 +7,7 @@
 
     &__top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 60px;
@@ -34,7 +35,7 @@
     }
 
     &__title {
-        margin-bottom: 36px;
+        margin-bottom: 39px;
         color: $colorWhite;
         font-weight: 500;
         font-size: 20px;
@@ -48,7 +49,18 @@
 
     .contacts {
         width: 276px;
-        height: 175px;
+    }
+
+    .catalog {
+        width: 245px;
+    }
+
+    .consumer {
+        width: 162px;
+    }
+
+    .social-media {
+        width: 179px;
     }
 
     &__menu {
@@ -75,9 +87,8 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
 
-        max-width: 277px;
-        width: 100%;
 
         &:not(:last-child) {
             margin-bottom: 22px;
@@ -103,7 +114,10 @@
     }
 
     &__item-content {
+        gap: 10px;
+        align-items: center;
         display: flex;
+        justify-content: center;
 
 
     }
@@ -115,11 +129,23 @@
         justify-content: center;
     }
 
+    .email {
+        font-size: 14px;
+        color: $colorGreyStroke;
+    }
+
+    .street {
+        font-size: 14px;
+        line-height: 1.29;
+        color: $colorGreyStroke;
+    }
+
     .icon {
         gap: 5px;
         align-items: center;
         display: flex;
         justify-content: center;
+        padding-left: 10px;
     }
 
     &__messengers {
@@ -140,7 +166,7 @@
     &__socials {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 15px;
 
         a {
             transition: 0.3s ease;
@@ -152,16 +178,11 @@
     }
 
     &__bottom {
-        margin-top: 70px;
-        padding-top: 28px;
+        margin-top: 89px;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-
+        gap: 80px;
         position: relative;
         z-index: 2;
 
@@ -174,7 +195,7 @@
     &__bottom-links {
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 22px;
 
         a {
             font-size: 14px;

@@ -2569,6 +2569,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 }
 .footer__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
@@ -2590,7 +2591,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   color: #A2A2A4;
 }
 .footer__title {
-  margin-bottom: 36px;
+  margin-bottom: 39px;
   color: #fff;
   font-weight: 500;
   font-size: 20px;
@@ -2602,7 +2603,15 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 }
 .footer .contacts {
   width: 276px;
-  height: 175px;
+}
+.footer .catalog {
+  width: 245px;
+}
+.footer .consumer {
+  width: 162px;
+}
+.footer .social-media {
+  width: 179px;
 }
 .footer__menu {
   display: flex;
@@ -2624,8 +2633,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 277px;
-  width: 100%;
+  flex-wrap: wrap;
 }
 .footer__item:not(:last-child) {
   margin-bottom: 22px;
@@ -2645,7 +2653,10 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   color: #fff;
 }
 .footer__item-content {
+  gap: 10px;
+  align-items: center;
   display: flex;
+  justify-content: center;
 }
 .footer .info {
   gap: 10px;
@@ -2653,11 +2664,21 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   display: flex;
   justify-content: center;
 }
+.footer .email {
+  font-size: 14px;
+  color: #A2A2A4;
+}
+.footer .street {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #A2A2A4;
+}
 .footer .icon {
   gap: 5px;
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-left: 10px;
 }
 .footer__messengers {
   display: flex;
@@ -2674,7 +2695,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__socials {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 15px;
 }
 .footer__socials a {
   transition: 0.3s ease;
@@ -2683,13 +2704,10 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   transform: translateY(-3px);
 }
 .footer__bottom {
-  margin-top: 70px;
-  padding-top: 28px;
+  margin-top: 89px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 80px;
   position: relative;
   z-index: 2;
 }
@@ -2700,7 +2718,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__bottom-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 22px;
 }
 .footer__bottom-links a {
   font-size: 14px;
