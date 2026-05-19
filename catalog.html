@@ -325,7 +325,7 @@
 
             <!-- Breadcrumbs -->
             <div class="breadcrumbs">
-                <img src="" alt="">
+                <img src="./assets/home.svg" alt="">
                 <span>/</span>
                 <a href="#">Каталог</a>
                 <span>/</span>
@@ -372,22 +372,28 @@
                         8982738210 Міст діодний з реле регулятором 90A NPR75 арт: 920
                     </h1>
 
-                    <div class="product-info__meta">
-                        <p>Артикул: 920</p>
-                        <p>Країна виробник: Україна</p>
-                    </div>
+                    <div class="product-info__characteristic">
 
-                    <div class="product-info__top">
+                        <ul class="product-info__meta">
+                            <li>
+                                <p>Артикул: <span class="black">920</span></p>
+                            </li>
+                            <li>
+                                <p>Країна виробник: <span class="black">Україна</span></p>
+                            </li>
+                        </ul>
 
-                        <div class="product-rating">
+                        <ul class="product-info__top">
+                            <li>
+                                <span class="black">4.5</span>
+                                <a href="#">25 відгуків</a>
+                            </li>
+                            <li>
+                                <button class="favorite-btn">Додати в обране</button>
+                            </li>
 
-                            <span>4.5</span>
-                            <a href="#">25 відгуків</a>
-                        </div>
 
-                        <button class="favorite-btn">
-                            ♡ Додати в обране
-                        </button>
+                        </ul>
 
                     </div>
 
@@ -1225,54 +1231,56 @@
         <div class="container">
             <div class="footer__top">
 
-                <!-- Лого -->
+                <!-- logo -->
                 <div class="footer__logo">
-                    <a href="./index.html">
-                        <img src="./assets/logo-black.svg" alt="Logo">
-                    </a>
+                    <ul>
 
-                    <p class="footer__description">
-                        Ексклюзивний дистриб’ютор автомобілів та запчастин ISUZU в Україні
-                    </p>
+                        <li><img src="./assets/logo-black.svg" alt="Logo"></li>
+                        <li>
+                            <p class="footer__description">
+                                Ексклюзивний дистриб’ютор автомобілів та запчастин ISUZU в Україні
+                            </p>
+                        </li>
+
+
+
+
+                    </ul>
                 </div>
-
-                <!-- Контакти -->
-                <div class="footer__column">
+                <!-- contacts -->
+                <div class="footer__column contacts">
                     <h3 class="footer__title">Контакти</h3>
 
-                    <div class="footer__item">
-                        <img src="./assets/fone.svg" alt="Logo">
-
-                        <div class="footer__item-content">
+                    <ul class="footer__item">
+                        <li class="footer__item-content info">
+                            <img src="./assets/fone.svg" alt="Logo">
                             <a href="tel:+380976692200">+38(097) 669 22 00</a>
 
-                            <div class="footer__messengers">
+                            <ul class="footer__item-content icon">
                                 <img src="./assets/whatsapp.svg" alt="Logo">
                                 <img src="./assets/telegram.svg" alt="Logo">
                                 <img src="./assets/viber.svg" alt="Logo">
-                            </div>
-                        </div>
-                    </div>
+                            </ul>
+                        </li>
 
-                    <div class="footer__item">
-                        <img src="./assets/mail.svg" alt="Logo">
+                        <li class="footer__item-content email">
+                            <img src="./assets/mail.svg" alt="Logo">
+                            <a href="mailto:bordichev@isuzu-kttk.com.ua">
+                                bordichev@isuzu-kttk.com.ua
+                            </a>
+                        </li>
 
-                        <a href="mailto:bordichev@isuzu-kttk.com.ua">
-                            bordichev@isuzu-kttk.com.ua
-                        </a>
-                    </div>
-
-                    <div class="footer__item">
-                        <img src="./assets/point.svg" alt="Logo">
-
-                        <a href="#">
-                            Україна, м. Черкаси, вул. Університетська, 33, офіс №38
-                        </a>
-                    </div>
+                        <li class="footer__item-content street">
+                            <img src="./assets/point.svg" alt="Logo">
+                            <a href="#">
+                                Україна, м. Черкаси, вул. Університетська, 33, офіс №38
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
 
-                <div class="footer__column">
+                <div class="footer__column" catalog>
                     <h3 class="footer__title">Каталог</h3>
 
                     <ul class="footer__menu">
@@ -1284,8 +1292,8 @@
                     </ul>
                 </div>
 
-                <!-- Споживачу -->
-                <div class="footer__column">
+                <!-- consumer -->
+                <div class="footer__column" consumer>
                     <h3 class="footer__title">Споживачу</h3>
 
                     <ul class="footer__menu">
@@ -1297,25 +1305,33 @@
                     </ul>
                 </div>
 
-                <!-- Соцмережі -->
-                <div class="footer__column">
+                <!-- social media -->
+                <div class="footer__column" social-media>
                     <h3 class="footer__title">Ми в соцмережах</h3>
 
-                    <div class="footer__socials">
-                        <a href="#">
-                            <img src="./assets/instagram-red.svg" alt="Logo">
-                        </a>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#">
+                                <img src="./assets/instagram-red.svg" alt="Logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/facebook-red.svg" alt="Logo">
+                            </a>
+                        </li>
 
-                        <a href="#">
-                            <img src="./assets/facebook-red.svg" alt="Logo">
-                        </a>
-                    </div>
+
+
+                    </ul>
                 </div>
             </div>
 
-            <!-- Нижня частина -->
+            <!-- lower part -->
             <div class="footer__bottom">
-                <p>© 2011-2026. Усі права захищені.</p>
+                <p>© 2011-
+                    <script>document.write(new Date().getFullYear())</script>. Усі права захищені.
+                </p>
 
                 <div class="footer__bottom-links">
                     <a href="#">Політика конфіденційності</a>
@@ -1324,6 +1340,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>

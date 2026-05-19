@@ -2199,30 +2199,40 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   height: 100%;
 }
 
+.product-info {
+  width: 769px;
+}
 .product-info__title {
   margin-bottom: 17px;
   font-weight: 500;
   font-size: 36px;
-  line-height: 1.11;
   color: #010101;
 }
-.product-info__meta {
-  margin-bottom: 1px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+.product-info__characteristic {
+  display: flex;
+  gap: 441px;
   margin-bottom: 24px;
 }
-.product-info__meta p {
-  color: #777;
+.product-info__meta {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
 }
-.product-info__meta p:first-child {
-  margin-bottom: 15px;
+.product-info__meta p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-grey-150);
+}
+.product-info .black {
+  color: var(--color-black);
 }
 .product-info__top {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-info__top a {
+  color: var(--color-red);
 }
 
 .product-rating {
@@ -2238,6 +2248,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   border: none;
   background: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 .product-status {
@@ -2256,15 +2267,12 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .product-price .current-price {
   font-weight: 600;
   font-size: 34px;
-  line-height: 0.88;
   color: #000000;
 }
 .product-price .old-price {
   text-decoration: line-through;
   font-weight: 400;
   font-size: 20px;
-  line-height: 16px;
-  line-height: 90%;
   color: var(--grey-stroke);
 }
 .product-price .discount {
@@ -2571,7 +2579,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 60px;
+  gap: 73px;
   position: relative;
   z-index: 2;
 }
@@ -2586,11 +2594,10 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__description {
   font-family: var(--font-family);
   font-size: 13px;
-  line-height: 1.54;
   color: #A2A2A4;
 }
 .footer__title {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   color: #fff;
   font-weight: 500;
   font-size: 20px;
@@ -2615,14 +2622,13 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__menu {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 .footer__menu li {
   list-style: none;
 }
 .footer__menu a {
   font-size: 14px;
-  line-height: 2.57;
   color: #A2A2A4;
 }
 .footer__menu a:hover {
@@ -2631,7 +2637,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 .footer__item:not(:last-child) {
@@ -2669,7 +2675,6 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 }
 .footer .street {
   font-size: 14px;
-  line-height: 1.29;
   color: #A2A2A4;
 }
 .footer .icon {
@@ -2704,6 +2709,7 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 }
 .footer__bottom {
   margin-top: 89px;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -2713,6 +2719,11 @@ html:not(.v-mobile) .seo__btn:focus-visible svg {
 .footer__bottom p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.45);
+}
+@media (max-width: 750px) {
+  .footer__bottom {
+    gap: 40px;
+  }
 }
 .footer__bottom-links {
   display: flex;

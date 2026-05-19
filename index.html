@@ -1913,20 +1913,21 @@
             <div class="footer__top">
 
                 <!-- logo -->
-                <ul class="footer__logo">
+                <div class="footer__logo">
+                    <ul>
 
-                    <li><img src="./assets/logo-black.svg" alt="Logo"></li>
-                    <li>
-                        <p class="footer__description">
-                            Ексклюзивний дистриб’ютор автомобілів та запчастин ISUZU в Україні
-                        </p>
-                    </li>
+                        <li><img src="./assets/logo-black.svg" alt="Logo"></li>
+                        <li>
+                            <p class="footer__description">
+                                Ексклюзивний дистриб’ютор автомобілів та запчастин ISUZU в Україні
+                            </p>
+                        </li>
 
 
 
 
-                </ul>
-
+                    </ul>
+                </div>
                 <!-- contacts -->
                 <div class="footer__column contacts">
                     <h3 class="footer__title">Контакти</h3>
@@ -2009,7 +2010,7 @@
 
             <!-- lower part -->
             <div class="footer__bottom">
-                <p>© 2011-2026. Усі права захищені.</p>
+                <p>© 2011-<script>document.write(new Date().getFullYear())</script>. Усі права захищені.</p>
 
                 <div class="footer__bottom-links">
                     <a href="#">Політика конфіденційності</a>
@@ -2018,6 +2019,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>

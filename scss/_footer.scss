@@ -10,7 +10,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 60px;
+        gap: 73px;
 
         position: relative;
         z-index: 2;
@@ -30,12 +30,11 @@
     &__description {
         font-family: var(--font-family);
         font-size: 13px;
-        line-height: 1.54;
         color: $colorGreyStroke;
     }
 
     &__title {
-        margin-bottom: 39px;
+        margin-bottom: 38px;
         color: $colorWhite;
         font-weight: 500;
         font-size: 20px;
@@ -66,7 +65,7 @@
     &__menu {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
 
         li {
             list-style: none;
@@ -74,7 +73,6 @@
 
         a {
             font-size: 14px;
-            line-height: 2.57;
             color: $colorGreyStroke;
 
             &:hover {
@@ -86,7 +84,7 @@
     &__item {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 22px;
         flex-wrap: wrap;
 
 
@@ -136,7 +134,6 @@
 
     .street {
         font-size: 14px;
-        line-height: 1.29;
         color: $colorGreyStroke;
     }
 
@@ -179,7 +176,7 @@
 
     &__bottom {
         margin-top: 89px;
-
+        flex-wrap: wrap;
         display: flex;
         align-items: center;
         gap: 80px;
@@ -189,6 +186,10 @@
         p {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.45);
+        }
+
+        @media (max-width: 750px) {
+            gap: 40px;
         }
     }
 

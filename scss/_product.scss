@@ -65,35 +65,47 @@
 
 
 .product-info {
+    width: 769px;
 
     &__title {
         margin-bottom: 17px;
         font-weight: 500;
         font-size: 36px;
-        line-height: 1.11;
         color: #010101;
     }
 
-    &__meta {
-        margin-bottom: 1px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
+    &__characteristic {
+        display: flex;
+        gap: 441px;
         margin-bottom: 24px;
+    }
+
+    &__meta {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
 
         p {
-            color: #777;
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--color-grey-150);
         }
 
-        p:first-child {
-            margin-bottom: 15px;
-        }
+    }
+
+    .black {
+        color: var(--color-black);
     }
 
     &__top {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 15px;
+
+
+        a {
+            color:  var(--color-red);
+        }
     }
 }
 
@@ -111,6 +123,7 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    padding: 0;
 }
 
 .product-status {
@@ -129,7 +142,6 @@
     .current-price {
         font-weight: 600;
         font-size: 34px;
-        line-height: 0.88;
         color: $colorBlack;
     }
 
@@ -137,8 +149,6 @@
         text-decoration: line-through;
         font-weight: 400;
         font-size: 20px;
-        line-height: 16px;
-        line-height: 90%;
         color: var(--grey-stroke);
     }
 
