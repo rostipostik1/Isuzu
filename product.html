@@ -368,9 +368,12 @@
                 <!-- RIGHT -->
                 <div class="product-info">
 
-                    <h1 class="product-info__title">
-                        8982738210 Міст діодний з реле регулятором 90A NPR75 арт: 920
-                    </h1>
+                    <div class="product-info__title">
+                        <h1>
+                            8982738210 Міст діодний з реле регулятором 90A NPR75 арт: 920
+                        </h1>
+                    </div>
+
 
                     <div class="product-info__characteristic">
 
@@ -434,12 +437,7 @@
                     <div class="product-description">
 
                         <p class="description-text">
-                            Високоякісний вузол генератора в зборі, що включає діодний міст та регулятор напруги (реле).
-                            Цей модуль розроблений спеціально для вантажних автомобілів Isuzu NPR75, обладнаних
-                            генераторами з силою струму 90 Ампер.
-                            Вузол відповідає за перетворення змінного струму в постійний та підтримку стабільної напруги
-                            в бортовій мережі автомобіля,
-                            що захищає акумулятор від перезаряду, а електроніку — від стрибків напруги.
+                            Високоякісний вузол генератора в зборі, що включає діодний міст та регулятор напруги (реле). Цей модуль розроблений спеціально для вантажних автомобілів Isuzu NPR75, обладнаних генераторами з силою струму 90 Ампер. Вузол відповідає за перетворення змінного струму в постійний та підтримку стабільної напруги в бортовій мережі автомобіля, що захищає акумулятор від перезаряду, а електроніку — від стрибків напруги.
 
                             Високоякісний вузол генератора в зборі, що включає діодний міст та регулятор напруги (реле).
                             Цей модуль розроблений спеціально для вантажних автомобілів Isuzu NPR75, обладнаних
@@ -457,41 +455,56 @@
                     <!-- Features -->
                     <div class="product-features">
 
-                        <div class="feature-card">
-                            <img src="assets/wallet.svg" alt="">
-                            <div class="feature-card__text">
-                                <h4>Оплата зручним способом</h4>
-                                <p>Зручна оплата як для фізичних осіб так і для юридичних осіб</p>
+                        <div class="feature-card__top">
+
+                            <div class="feature-card">
+                                <img src="assets/wallet.svg" alt="">
+                                <div class="feature-card__text">
+                                    <h4>Оплата зручним способом</h4>
+                                    <p>Зручна оплата як для фізичних осіб так і для юридичних осіб</p>
+                                </div>
+
+                            </div>
+
+                            <div class="feature-card">
+                                <img src="assets/new-mail.svg" alt="">
+                                <div class="feature-card__text">
+                                    <h4>Доставка накладеним платежем</h4>
+                                    <p>Відправлення накладеним платежем Новою поштою</p>
+                                </div>
+
+                            </div>                            
+                        </div>
+
+                        <div class="feature-card__bottom">
+
+                            <div class="feature-card">
+                                <img src="assets/card.svg" alt="">
+                                <div class="feature-card__text">
+                                    <h4>Онлайн оплата</h4>
+                                    <div class="feature-card__pay">
+                                        <img src="./assets/visa.svg" alt="">
+                                        <img src="./assets/master-card.svg" alt="">
+                                        <img src="./assets/liqpay.svg" alt="">
+                                        <img src="./assets/mono.svg" alt="">                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="feature-card">
+                                <img src="assets/benefits-2.svg" alt="">
+                                <div class="feature-card__text">
+                                    <h4>Доставка Укрпоштою – по всій Україні!</h4>
+                                    <p>≈ 100 грн / Безкоштовно при замовленні від 5 000 грн</p>
+                                </div>
+
                             </div>
 
                         </div>
 
-                        <div class="feature-card">
-                            <img src="assets/new-mail.svg" alt="">
-                            <div class="feature-card__text">
-                                <h4>Доставка накладеним платежем</h4>
-                                <p>Відправлення накладеним платежем Новою поштою</p>
-                            </div>
 
-                        </div>
-
-                        <div class="feature-card">
-                            <img src="assets/card.svg" alt="">
-                            <div class="feature-card__text">
-                                <h4>Онлайн оплата</h4>
-                                <p>Visa / Mastercard / LiqPay</p>
-                            </div>
-
-                        </div>
-
-                        <div class="feature-card">
-                            <img src="assets/benefits-2.svg" alt="">
-                            <div class="feature-card__text">
-                                <h4>Доставка Укрпоштою</h4>
-                                <p>Безкоштовно при замовленні від 5000 грн</p>
-                            </div>
-
-                        </div>
 
                     </div>
 
@@ -568,11 +581,8 @@
 
     <!-- CART MODAL -->
     <div class="modal" id="cartModal">
-
         <div class="modal-overlay"></div>
-
         <div class="modal-content cart-modal">
-
             <div class="modal-content__menu">
                 <button class="modal-close">×</button>
 
@@ -583,24 +593,37 @@
 
                 <img src="./assets/product.jpg" alt="">
 
+                
                 <div class="cart-item__info">
-                    <h4>8982738210 Міст діодний</h4>
-
-                    <div class="cart-quantity">
-                        <button class="cart-minus">−</button>
-                        <input type="text" id="cartQuantity" value="1">
-                        <button class="cart-plus">+</button>
+                    <div class="cart-text">
+                        <h4>8982738210 Міст діодний з реле регулятором 90А NPR75 </h4>                        
+                        <button class="cart-text__delit">Видалити</button>
+                    </div>           
+                    <div class="card-text__add">
+                        <p>Артикул: <span class="black">920</span></p>
+                        <p>5 954 грн</p>                        
+                    </div>
+                    <div class="quantity cart">
+                        <button class="quantity-minus">−</button>
+                        <input type="text" value="1" id="quantityInput2">
+                        <button class="quantity-plus">+</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="cart-price">
-                    <span id="cartTotal">520 грн</span>
+
+            <div class="modal-end">
+                <div class="modal-end__text">
+                    <p>Всього:</p>
+                    <h3>12 500 грн</h3>
                 </div>
-
+                <div class="modal-end__buttons">
+                    <button class="continue">Продовжити покупки</button>
+                    <button class="arrange">Оформити замовлення</button>
+                </div>
             </div>
 
         </div>
-
     </div>
 
     <!-- QUICK ORDER -->
@@ -615,15 +638,11 @@
             <h3>Швидке замовлення</h3>
 
             <p>
-                Наш менеджер зв'яжеться з вами для уточнення деталей.
+                Наш менеджер зв'яжеться з вами за вказаним номером якнайшвидше, щоб уточнити всі деталі вашого замовлення
             </p>
 
             <form class="quick-form">
-
-                <input type="text" placeholder="Ваше ім'я">
-
                 <input type="tel" placeholder="Номер телефону">
-
                 <button type="submit">
                     Замовити
                 </button>

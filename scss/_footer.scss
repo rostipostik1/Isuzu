@@ -3,7 +3,7 @@
     background: $colorBlackRed;
     padding: 82px 0;
     overflow: hidden;
-    color: $colorWhite;
+    color: var(--color-white);
 
     &__top {
         display: flex;
@@ -28,9 +28,8 @@
     }
 
     &__description {
-        font-family: var(--font-family);
         font-size: 13px;
-        color: $colorGreyStroke;
+        color: var(--color-grey-stroke);
     }
 
     &__title {
@@ -38,7 +37,7 @@
         color: $colorWhite;
         font-weight: 500;
         font-size: 20px;
-        color: $colorGreyLight;
+        color: var(--color-grey-light);
     }
 
     &__column {
@@ -73,10 +72,10 @@
 
         a {
             font-size: 14px;
-            color: $colorGreyStroke;
+            color: var(--color-grey-stroke);
 
             &:hover {
-                color: $colorWhite;
+                color: var(--color-white);
             }
         }
     }
@@ -103,10 +102,10 @@
 
         a {
             font-weight: 500;
-            color: $colorWhite;
+            color: var(--color-white);
 
             &:hover {
-                color: $colorWhite;
+                color: var(--color-white);
             }
         }
     }
@@ -129,12 +128,12 @@
 
     .email {
         font-size: 14px;
-        color: $colorGreyStroke;
+        color: var(--color-grey-stroke);
     }
 
     .street {
         font-size: 14px;
-        color: $colorGreyStroke;
+        color: var(--color-grey-stroke);
     }
 
     .icon {
@@ -152,10 +151,10 @@
 
         a {
             font-size: 13px;
-            color: $colorGreen;
+            color: var(--color-green);
 
             &:hover {
-                color: $colorWhite;
+                color: var(--color-white);
             }
         }
     }
@@ -204,7 +203,7 @@
             transition: 0.3s ease;
 
             &:hover {
-                color: $colorWhite;
+                color: var(--color-white);
             }
         }
     }

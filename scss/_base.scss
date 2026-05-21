@@ -1,7 +1,6 @@
 :root {
   --color-black--rgb: 35, 31, 32;
-  --color-black: #231F20;
-  --color-white--rgb: 255, 255, 255;
+  --color-BlackRed: #181313;
   --color-white: #ffffff;
   --color-red--rgb: 209, 33, 15;
   --color-red: #D1210F;
@@ -9,12 +8,17 @@
   --color-grey-050: #3D3D3D;
   --color-grey-100--rgb: 111, 111, 111;
   --color-grey-100: #6F6F6F;
-  --color-grey-150--rgb: 189, 188, 191;
   --color-grey-150: #BDBCBF;
-  --color-grey-200--rgb: 247, 247, 247;
   --color-grey-200: #F7F7F7;
   --color-green-100--rgb: 53, 163, 115;
   --color-green-100: #35A373;
+  --color-black-red: #181313;
+  --color-green: #9FC55A;
+  --color-beige: #989898;
+  --color-black: #000000;
+  --color-grey: #BDBCBF;
+  --color-grey-stroke: #A2A2A4;
+  --color-grey-light: #F7F7F7;
 }
 
 * {
@@ -1537,12 +1541,6 @@ html:not(.v-mobile) .header__buttons-item:focus-visible:not(:first-child) svg {
   }
 }
 
-@media (max-width: 767px) {
-  .benefits__wrapper {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media (max-width: 479px) {
   .benefits__wrapper {

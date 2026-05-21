@@ -422,6 +422,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
+    
+
     // MODALS
 
     const cartModal = document.getElementById('cartModal');
